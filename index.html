@@ -1,0 +1,31 @@
+<script src="./scripts.js"></script>
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+<div class="bg-orange-100 w-full h-full">
+    <div class="w-full max-w-xs m-auto transform translate-y-1/2">
+        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="mb-6 block">
+                <h4 class="block text-center text-gray-700 text-lg font-bold mb-4">BTC to USD</h4>
+                <div class="flex">
+                    <div class="w-1/2">
+                        <label class="inline-block text-center text-gray-700 text-sm font-bold w-auto">BUY :</label>
+                        <span id="spanBuy" class="inline-block text-center text-gray-700 text-sm w-auto">0.00</span>
+                    </div>
+                    <div class="w-1/2">
+                        <label class="inline-block text-center text-gray-700 text-sm font-bold w-auto">SELL :</label>
+                        <span id="spanSell" class="inline-block text-center text-gray-700 text-sm w-auto">0.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-6">
+                <input class="block shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-center" id="amount" type="text" placeholder="Amount">
+                <label class="block text-green-700 text-center text-bold py-2 w-full" id="converted"></label>
+            </div>
+            <div class="flex items-center justify-between">
+                <button id="submitBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" type="button">
+                    Convert
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
